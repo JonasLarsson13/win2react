@@ -1,0 +1,35 @@
+.breadcrumb {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    max-width: 1296px;
+    margin: 0 auto;
+
+    a {
+        color: #9397AD;
+        text-decoration: none;
+        display: flex;
+        gap: 5px;
+        font-size: 14px;
+        transition: all 0.2s ease-in-out;
+
+        svg {
+            fill: #9397AD;
+            transition: all 0.2s ease-in-out;
+        }
+
+        &.active {
+            color: #6366F1;
+            cursor: default;
+            pointer-events: none;
+        }
+
+        &:hover {
+            color: #6366F1;
+
+            svg {
+                fill: #6366F1;
+            }
+        }
+    }
+}

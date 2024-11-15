@@ -1,0 +1,50 @@
+.testimonials {
+    position: relative;
+    width: 100%;
+    background-color: var(--secoundary-background-color);
+    height: auto;
+    padding: 4rem 2rem;
+
+    &__container {
+        width: 100%;
+        max-width: 1076px;
+        margin: 0 auto;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(3, 1fr);
+
+        h1 {
+            font-size: 32px;
+            font-weight: 500;
+            padding-right: 4rem;
+        }
+        aside {
+            background: var(--background-color);
+            padding: 0 1.4rem 1rem 1.4rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+            border-radius: 6px;
+            box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.04);
+
+            p {
+                padding: 0.6rem 0;
+            }
+
+            .quote {
+                margin-top: -20px;
+                width: 44px;
+                height: 44px;
+            }
+
+            .stars {
+                width: 88px;
+                height: 16px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 960px) {
+        display: none;
+    }
+}

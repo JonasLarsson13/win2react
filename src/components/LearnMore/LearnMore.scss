@@ -1,0 +1,75 @@
+.mp {
+    width: 100%;
+    height: auto;
+    padding: 8rem 2rem;
+
+    &__container {
+        width: 100%;
+        max-width: 1076px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+
+        article {
+            display: flex;
+            gap: 5rem;
+
+            aside {
+                display: flex;
+                flex-direction: column;
+                gap: 1.6rem;
+                align-items: start;
+
+                h3 {
+                    font-size: 28px;
+                    max-width: 400px;
+                    font-weight: 600;
+                }
+
+                ol {
+                    list-style: none;
+                    
+                    li {
+                        padding-bottom: 0.8rem;
+                        color: var(--secoundary-text-color);
+                        font-size: 14px;
+                        font-weight: 300;
+                    }
+
+                    li::before {
+                        content: "";
+                        display: inline-block;
+                        width: 16.67px;
+                        height: 16.67px;
+                        background-image: url('../../assets/icons/check.svg');
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        margin-right: 8px;
+                        vertical-align: middle;
+                    }
+                }
+
+                .payment-details {
+                    display: flex;
+                    gap: 1.6rem;
+                    
+                    span {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: start;
+                        gap: 1rem;
+
+                        p {
+                            line-height: 1.8;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 960px) {
+        display: none;
+    }
+}

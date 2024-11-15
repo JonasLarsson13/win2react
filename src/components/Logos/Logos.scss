@@ -1,0 +1,60 @@
+.logos {
+    width: 100%;
+    padding: 3.6rem 2rem;
+
+    &__container {
+        width: 100%;
+        max-width: 1296px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+
+        figure {
+            width: 100%;
+            max-width: 196px;
+            height: 100px;
+            border-radius: 8px;
+            border: 1px solid var(--stroke);
+            background: var(--background-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    @media screen and (max-width: 1270px) {
+        padding: 2rem 2rem;
+
+        &__container {
+            figure {
+                max-width: 160px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1050px) {
+        &__container {
+            grid-template-columns: repeat(4, 1fr);
+            
+            figure:nth-last-child(1),
+            figure:nth-last-child(2) {
+                display: none;
+            }
+        }
+    }
+
+    @media screen and (max-width: 725px) {
+        padding: 2rem 1rem;
+        &__container {
+            grid-template-columns: repeat(3, 1fr);
+            
+            figure:nth-last-child(3) {
+                display: none;
+            }
+        }
+    }
+
+    @media screen and (max-width: 565px) {
+        display: none;
+    }
+}
